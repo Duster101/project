@@ -5,7 +5,7 @@
 #include "Enemy.hpp"
 #include <vector>
 #include <string>
-#include <windows.h> // For console coloring on Windows
+#include <windows.h> 
 
 class Game {
 private:
@@ -16,9 +16,8 @@ private:
     Position exit;
     int currentLevel = 0;
     std::vector<std::string> levelFiles;
-    HANDLE hConsole; // Console handle for coloring
+    HANDLE hConsole; 
 
-    // Helper function to set console text color
     void setConsoleColor(int color) {
         SetConsoleTextAttribute(hConsole, color);
     }

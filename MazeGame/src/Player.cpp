@@ -18,8 +18,8 @@ void Player::move(char dir, std::vector<std::vector<char>>& grid) {
             pos = newPos;
             moves++;
             if (cell == '*') {
-                score += 10; // Collectible
-                grid[newPos.y][newPos.x] = ' '; // Clear collectible
+                score += 10; 
+                grid[newPos.y][newPos.x] = ' '; 
             }
         }
     }
