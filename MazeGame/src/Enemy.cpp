@@ -9,10 +9,10 @@ void Enemy::update(std::vector<std::vector<char>>& grid) {
     Position newPos = pos;
 
     switch (direction) {
-        case 0: newPos.y--; break; // Up
-        case 1: newPos.y++; break; // Down
-        case 2: newPos.x--; break; // Left
-        case 3: newPos.x++; break; // Right
+        case 0: newPos.y--; break; // for Up
+        case 1: newPos.y++; break; // for Down
+        case 2: newPos.x--; break; // for Left
+        case 3: newPos.x++; break; // for Right
     }
 
     // Check bounds and collisions
